@@ -1,0 +1,54 @@
+String cin_str = request.getParameter("search_cin");
+            int cin_no = Integer.parseInt(cin_str);
+            
+            String query = "select CIN,Case_Status from CaseDetails;";
+            String query2 = "select CIN,Case_Status from CaseCompleted;";
+            
+            Statement st = con.createStatement();
+            Statement st2 = con.createStatement();
+            
+            ResultSet rs = st.executeQuery(query);
+            ResultSet rs2 = st2.executeQuery(query2);
+            int count = 0;
+            
+            //for identifing case is completed or not
+            if(count == 0)
+            {
+                while(rs2.next())
+                {
+                    int cin2 = rs2.getInt("CIN");
+                    String case_status2 = rs2.getString("Case_Status");
+                    if(cin2 == cin_no)
+                    {
+                        count = 1;
+                        out.println(cin2);
+                        out.println(case_status2);
+                    }
+                }    
+            }
+            else if(count == 0)
+            {
+                while(rs.next())
+                {
+                    int cin = rs.getInt("CIN");
+                    String case_status = rs.getString("Case_Status");
+                    if(cin == cin_no)
+                    {
+                        count = 1;
+                        out.println(cin);
+                        out.println(case_status);
+                    }
+                }
+            }
+            else if(count == 0)
+            {
+                out.println("no case found");
+            }
+       
+           out.println("</body>");
+            out.println("</html>");
+
+
+
+//login page
+

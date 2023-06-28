@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new case filing</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="JIS.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark NAVBAR">
+        <a class="navbar-brand" href="#">
+            <img src="/home/apiiit-rkv/Pictures/highcourt_logo.jpeg" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item  mr-3">
+                    <a class="nav-link NAVLINK" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cases
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item " href="new_case_file.html">New Case File</a>
+                      <a class="dropdown-item " href="update_old_case.html">Update old case</a>
+                      
+                      <a class="dropdown-item " href="case_completed.html">Case completion</a>
+                    </div>
+                  </li>
+                <li class="nav-item active mr-3 ">
+                    <a class="nav-link NAVLINK" href="#">Case Status</a>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">Calender</a>
+                  </li>
+                  <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle NAVLINK" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Account Management
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="create_accounts.html">Account Creation</a>
+                      <a class="dropdown-item" href="#">Delete Account</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">print</a>
+                  </li>
+               </ul>
+            
+
+            
+          </div>
+        </div>
+      </nav>
+
+          <div class="form-box shadow d-flex flex-column justify-content-center py-5 ">
+            <h2 class="search-heading"> Search Cases By Keywords </h2>
+            <form action="search_cases" method="post">
+                <div class="input-group">
+                    <input type="text" name="search_case" class="search-cin" placeholder="XXXXXXXXX">
+                    <button type="submit" class="search-button "><i class="fa fa-search" style="font-size:30px;color:rgb(0, 0, 0)"></i> </button>
+                </div>
+            </form>
+            
+          </div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>case completion </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="JIS.css" >
+
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark NAVBAR">
+        <a class="navbar-brand" href="#">
+            <img src="/home/apiiit-rkv/Pictures/highcourt_logo.jpeg" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cases
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item " href="#">New Case File</a>
+                      <a class="dropdown-item " href="#">Update old case</a>
+                      
+                      <a class="dropdown-item  active " href="#">Case completion</a>
+                    </div>
+                  </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">Case Status</a>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">Calender</a>
+                  </li>
+                  <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle NAVLINK" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Account Management
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Account Creation</a>
+                      <a class="dropdown-item" href="#">Delete Account</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">print</a>
+                  </li>
+               </ul>
+            
+
+            
+          </div>
+        </div>
+      </nav>
+
+          <div class="form-box shadow d-flex flex-column justify-content-center py-5 ">
+            <form action="case_completed" method="post" >
+                <h1 class="register-heading">Register case</h1>
+                <table cellpadding="3" height=""><tr><td>                    
+                    <label for="cin">CIN :</label></td><td>
+                    <input type="text" name="cin" id="cin" >
+                    </td></tr><tr><td>
+                    
+                    
+                    
+                    <label for="final_judgement_date">Final judgement Date :</label></td><td>
+                    <input type="date" name="final_judgement_date" id="final_judgement_date">
+                </td></tr><tr><td>
+                   
+                    <label for="case_status">Case Status :</label></td><td>
+                    <input type="text" name="case_status" id="case_status">
+                </td></tr><tr><td> 
+                    
+                    <label for="judge">Judge Name :</label></td><td>
+                    <input type="text" name="judge" id="judge">
+                </td></tr><tr><td>
+                    <label for="final_case_summary">Final Case Summary : </label></td><td>
+                    <textarea name="final_case_summary" id="final_case_summary" cols="40" rows="2"></textarea>
+                </td></tr>   
+            </table>
+            <button type="submit" class="register-button btn btn-success px-5"> Close Case </button>             
+            </form>
+          </div>
+    </body>
+</html>

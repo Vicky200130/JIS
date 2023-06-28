@@ -1,0 +1,46 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25-Feb-2023, 10:19:45 PM
+    Author     : sathish
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+.NAVBAR{
+    background-color: #36454F;
+    font-weight:500;
+    font-family:"Roboto";
+}
+.NAVLINK{
+    color:white;
+}
+.sub-heading{
+    font-family: "Roboto";
+    font-size:18px;
+    font-weight:600;
+}
+.sub-heading:hover {
+    text-decoration: none;
+}
+.main_container{
+    background-color: whitesmoke;
+}
+.rounder_corners{
+    border-radius: 22px;
+}
+.heading4{
+    color:#992720;
+    font-family: "Roboto";
+    font-weight:700;
+    font-style: italic;
+}
+.paragrapg45{
+    color:#36454F ;
+    font-family: "Roboto";
+    font-weight:600;
+
+}

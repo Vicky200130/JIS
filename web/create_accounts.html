@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account Creating...</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="JIS.css" >
+
+  </head>
+<body>
+  <div class="nav_bar">
+    <nav class="navbar navbar-expand-lg navbar-dark NAVBAR">
+        <a class="navbar-brand" href="#">
+            <img src="/home/apiiit-rkv/Pictures/highcourt_logo.jpeg" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cases
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item " href="#">New Case File</a>
+                      <a class="dropdown-item " href="#">Update old case</a>
+                      
+                      <a class="dropdown-item " href="#">Case completion</a>
+                    </div>
+                  </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">Case Status</a>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">Calender</a>
+                  </li>
+                  <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle NAVLINK" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Account Management
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item active" href="#">Account Creation</a>
+                      <a class="dropdown-item" href="#">Delete Account</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link NAVLINK" href="#">print</a>
+                  </li>
+               </ul>
+            
+
+            
+          </div>
+        </div>
+      </nav>
+
+</div>
+
+    <div class="form-box shadow d-flex flex-column justify-content-center py-5 "> 
+              <div class="button_box mb-4 d-flex flex-row justify-content-center">
+                    
+    
+                  <button class="btn btn-primary shadow" id="lawyerButtonElt">Lawyer</button>
+    
+                  <button class="btn btn-light shadow" id ="judgeButtonElt">Judge</button>
+   
+    
+                </div>
+        
+            <form action="create_accounts" method="post" id="createForm" >
+                <h1 class="register-heading" id="headingEL">Lawyer Account</h1>
+                <table cellpadding="3" height="">
+                  <tr><td>                    
+                    <label for="name" id="labelName">Lawer name</label></td><td>
+                    <input type="text" name="name" id="name" >
+                    <input type="hidden" name="hidden_name" value="lawyer" id="hidden_name">
+                    </td></tr><tr><td>
+                    <label for="username">Issue Username:</label></td><td>
+                    <input type="text" name="username" id="username">
+                    </td></tr><tr><td>
+                    <label for="password">Issue Password : </label></td><td>
+                    <input type="password" name="password" id="password">
+                    
+                </td></tr>  
+                <tr><td>                    
+                  <label for="registerpassword">Registerer Password:</label></td><td>
+                  <input type="text" name="registrarpassword" id="registerpassword" >
+                  </td></tr> 
+                </table>
+            <button type="submit" class="register-button btn btn-success px-5" id="createAcoountBtn">Create Account</button>             
+            </form>
+      </div>
+      <script src="create.js"></script>
+
+  </body>
+</html>
